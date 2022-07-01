@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Resume Website</title>
+    <title>My Resume</title>
+    <link rel="icon" type="image/x-icon" href="./images/resume.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,6 +34,13 @@
       a {
         text-decoration: none;
       }
+      .middle{
+        display: block;
+        justify-content: center;
+      }
+      .zoom:hover {
+  transform: scale(1.2);
+      }
     </style>
   </head>
 
@@ -40,31 +48,32 @@
     <!-- menu -->
     <div class="squared rounded-3 p-5 mt-5 mx-5 mb-5">
       <div class="hstack gap-5 mx-auto justify-content-center">
-        <a href="index.html" style="color: blue; font-size: 20px"target="_self" button class="btn btn-outline-success" >Home</button>
+        <a href="index.html" style="color: blue; font-size: 20px"target="_self" button class="btn btn-outline-warning" >Home</button>
         </a>
-        <a href="Experience.html" style="color: blue; font-size: 20px"target="_self" button class="btn btn-outline-success" >Experience</button></a>
-        <a href="Contact.html" style="color: blue; font-size: 20px"target="_self" button class="btn btn-outline-success" >Contact</button>
+        <a href="Experience.html" style="color: blue; font-size: 20px"target="_self" button class="btn btn-outline-warning" >Experience</button></a>
+        <a href="Contact.html" style="color: blue; font-size: 20px"target="_self" button class="btn btn-outline-warning" >Contact</button>
         </a>
       </div>
       <!-- contact info-->
-      <div class="vstack mt-5 mx-5 gap-3">
+      <div class="vstack mt-5 mx-5 gap-3 align-items-center">
         <div>
           <p
-            class="text-center fw-bold align-items-center"
+            class="text-center fw-bold"
             style="color: white; font-size: 40px"
           >
             MY EXPIRENCE
           </p>
         </div>
-        <div class="d-flex p-3 ms-3 gap-3">
-          <div class="card" style="width: 18rem">
+        <div class="d-flex justify-content-center">
+        <div class="hstack gap-5 p-3">
+          <div class="card zoom" style="width: 18rem">
             <img
               src="./images/power.jpg"
               width="150px"
               height="200px"
               class="card-img-top"
             />
-            <div class="card-body">
+            <div class="card-body card text-white bg-dark">
               <h5 class="card-title">PTT Project</h5>
               <p class="card-text">
                 I joined the project that called "Small power but can change the
@@ -74,31 +83,30 @@
             </div>
           </div>
 
-          <div class="card" style="width: 18rem">
+          <div class="card zoom" style="width: 18rem">
             <img
               src="./images/project1.jpg"
               width="150px"
               height="200px"
               class="card-img-top"
             />
-            <div class="card-body">
+            <div class="card-body card text-white bg-dark">
               <h5 class="card-title">Basic Computer Project</h5>
               <p class="card-text">
                 I crated the project that called "Virus Survival" by using
-                scratch with my friends and it was a very intereting game so I'm
-                proud of it.
+                scratch with my friends.it was a very intereting game the game is about survival game that must cleared the mission.
               </p>
             </div>
           </div>
 
-          <div class="card" style="width: 18rem">
+          <div class="card zoom" style="width: 18rem">
             <img
               src="./images/project2.jpg"
               width="150px"
               height="200px"
               class="card-img-top"
             />
-            <div class="card-body">
+            <div class="card-body card text-white bg-dark">
               <h5 class="card-title">Computer Programming Project</h5>
               <p class="card-text">
                 I crated the project that called "Mystery World" by using c++
@@ -108,6 +116,7 @@
             </div>
           </div>
         </div>
+      </div>
         <p class="mt-5 text-center" style="color: white">
           ©2022 by Thidayu Peaungtham
         </p>
