@@ -35,6 +35,10 @@
       a {
         text-decoration: none;
       }
+      .zoom:hover {
+        transform: scale(1.2);
+        transition: transform .7s;
+      }
       
     </style>
   </head>
@@ -53,7 +57,7 @@
       <!-- head introduction-->
       <div class="vstack mt-5 mx-5 gap-3">
         <div>
-          <p class="text-center fw-bold align-items-center" style="color: white; font-size: 40px"
+          <p class="text-center fw-bold" style="color: white; font-size: 40px"
             >INTRODUCTION</p
           >
         </div>
@@ -76,11 +80,14 @@
           </div>
         </div>
         <!-- head skill -->
+        <div>
           <p class="text-center fw-bold mt-5 mb-3 align-items-center" style="color: white; font-size: 40px"
             >MY SKILLS</p
           >
+        </div>
           <!-- skill information -->
-          <div class="shadow-lg rounded-3 p-3 mx-5">
+          <!--skill programming-->>
+          <div class="zoom shadow-lg rounded-3 p-3 mx-5">
             <div class="hstack gap-4">
               <img
                 src="./images/compcode.jpg"
@@ -89,6 +96,7 @@
                 style="object-fit: cover"
                 class="rounded-circle"
               />
+             
               <div class="vstack mt-4">
                 <span class="fw-bold" style="color: rgb(0, 0, 0); font-size: 30px"
                   >Programming</span
@@ -99,8 +107,8 @@
               </div>
             </div>
         </div>
-
-        <div class="shadow-lg rounded-3 p-3 mx-5">
+          <!--skill sports-->
+        <div class="zoom shadow-lg rounded-3 p-3 mx-5">
           <div class="hstack gap-4">
             <img
               src="./images/sport.webp"
@@ -119,8 +127,8 @@
             </div>
           </div>
       </div>
-
-      <div class="shadow-lg rounded-3 p-3 mx-5">
+            <!--skill music-->
+      <div class="zoom shadow-lg rounded-3 p-3 mx-5">
         <div class="hstack gap-4">
           <img
             src="./images/music.webp"
